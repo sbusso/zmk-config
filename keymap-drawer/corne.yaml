@@ -40,7 +40,7 @@ layers:
   - RALT
   - LGUI
   - {t: SPACE, h: lower}
-  - SPACE
+  - {t: SPACE, h: raise}
   - ENTER
   - raise
   lower:
@@ -126,9 +126,9 @@ layers:
   - LGUI
   - numbers
   - SPACE
-  - RET
+  - {t: RET, type: held}
   - {t: ▽, type: trans}
-  - {t: RALT, type: held}
+  - RALT
   adjust:
   - '&sys_reset'
   - '&bootloader'
@@ -169,9 +169,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   numbers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,3 +215,6 @@ layers:
   - '='
   - {t: '=', type: held}
   - '0'
+combos:
+- p: [38, 39]
+  k: {t: numbers, h: toggle}
