@@ -38,11 +38,11 @@ layers:
   - /
   - ESC
   - RALT
-  - LGUI
+  - {t: ENTER, h: LGUI}
   - {t: SPACE, h: lower}
   - {t: SPACE, h: raise}
-  - ENTER
-  - raise
+  - {t: ENTER, h: adjust}
+  - numbers
   lower:
   - '`'
   - '1'
@@ -131,11 +131,18 @@ layers:
   - RALT
   adjust:
   - '&sys_reset'
-  - '&bootloader'
-  - BT CLR
+  - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT NXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -147,12 +154,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -169,8 +171,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   numbers:
   - {t: ▽, type: trans}
@@ -182,7 +182,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - O
+  - '%'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -196,7 +196,7 @@ layers:
   - '6'
   - '-'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -207,14 +207,18 @@ layers:
   - '8'
   - '9'
   - +
+  - Gui+ +
+  - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - '='
-  - {t: '=', type: held}
-  - '0'
+  - '='
+  - {t: '0', type: held}
 combos:
 - p: [38, 39]
   k: {t: numbers, h: toggle}
+- p: [36, 37]
+  k: {t: lower, h: toggle}
+- p: [41, 40]
+  k: {t: raise, h: toggle}
