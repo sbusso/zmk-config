@@ -66,7 +66,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - ':'
+  - '|'
   - '"'
   - LCTRL
   - {t: ▽, type: trans}
@@ -74,11 +74,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - _
   - '-'
+  - _
   - '{'
   - '}'
-  - '|'
+  - \
   - '~'
   - LGUI
   - {t: ▽, type: trans}
@@ -176,15 +176,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - E
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MUTE
+  - VOL DN
+  - VOLUME UP
   - '1'
   - '2'
   - '3'
-  - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
+  - /
+  - ''
   - {t: ▽, type: trans}
   - A
   - {t: ▽, type: trans}
@@ -194,9 +194,9 @@ layers:
   - '4'
   - '5'
   - '6'
-  - '-'
-  - {t: ▽, type: trans}
-  - /
+  - +
+  - '*'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -206,9 +206,9 @@ layers:
   - '7'
   - '8'
   - '9'
-  - +
-  - Gui+ +
-  - '*'
+  - '='
+  - '%'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -222,3 +222,5 @@ combos:
   k: {t: lower, h: toggle}
 - p: [41, 40]
   k: {t: raise, h: toggle}
+- p: [39, 35]
+  k: {t: default, h: toggle}
