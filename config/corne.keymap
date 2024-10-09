@@ -75,10 +75,10 @@
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &kp SLASH     &none
-&trans  &kp A   &trans  &trans      &trans        &trans             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp ASTERISK  &none
-&trans  &trans  &trans  &kp C       &trans        &trans             &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL  &kp PERCENT   &none
-                        &trans      &trans        &trans             &kp EQUAL     &kp EQUAL     &kp NUMBER_0
+&trans  &trans  &capture_area  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &kp SLASH     &none
+&trans  &kp A   &trans         &trans      &trans        &trans             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp ASTERISK  &none
+&trans  &trans  &trans         &kp C       &trans        &trans             &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL  &kp PERCENT   &none
+                               &trans      &trans        &trans             &kp EQUAL     &kp EQUAL     &kp NUMBER_0
             >;
         };
     };
@@ -117,6 +117,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp RA(C)>;
+        };
+
+        capture_area: capture_area {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(NUMBER_4))>;
+            label = "CAPTURE_AREA";
         };
     };
 
