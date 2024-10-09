@@ -175,7 +175,7 @@ layers:
   numbers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&capture_area'
   - MUTE
   - VOL DN
   - VOLUME UP
