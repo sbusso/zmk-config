@@ -27,6 +27,11 @@
             bindings = <&tog 2>;
             key-positions = <41 40>;
         };
+
+        reset_layer {
+            bindings = <&to 0>;
+            key-positions = <39 35>;
+        };
     };
 
     keymap {
@@ -43,10 +48,10 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6     &kp N7     &kp N8    &kp N9     &kp N0     &kp DEL
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &kp COLON  &kp DQT
-&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &kp UNDER  &kp MINUS  &kp LBRC  &kp RBRC   &kp PIPE   &kp TILDE
-                           &kp LGUI  &trans  &kp SPACE    &kp RET    &mo 4      &kp RALT
+&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6     &kp N7          &kp N8    &kp N9     &kp N0         &kp DEL
+&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp LEFT   &kp DOWN        &kp UP    &kp RIGHT  &kp PIPE       &kp DQT
+&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &kp MINUS  &kp UNDERSCORE  &kp LBRC  &kp RBRC   &kp BACKSLASH  &kp TILDE
+                           &kp LGUI  &trans  &kp SPACE    &kp RET    &mo 4           &kp RALT
             >;
         };
 
@@ -70,10 +75,10 @@
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &kp E   &trans  &trans    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT  &trans        &trans
-&trans  &kp A   &trans  &trans  &trans  &trans    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS    &trans        &kp SLASH
-&trans  &trans  &trans  &kp C   &trans  &trans    &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PLUS     &kp LG(PLUS)  &kp ASTERISK
-                        &trans  &trans  &trans    &kp EQUAL     &kp EQUAL     &kp NUMBER_0
+&trans  &trans  &trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &kp SLASH     &none
+&trans  &kp A   &trans  &trans      &trans        &trans             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp ASTERISK  &none
+&trans  &trans  &trans  &kp C       &trans        &trans             &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL  &kp PERCENT   &none
+                        &trans      &trans        &trans             &kp EQUAL     &kp EQUAL     &kp NUMBER_0
             >;
         };
     };
