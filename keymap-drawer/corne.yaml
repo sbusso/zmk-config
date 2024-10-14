@@ -82,8 +82,8 @@ layers:
   - '~'
   - LGUI
   - {t: ▽, type: trans}
-  - {t: SPACE, type: held}
-  - RET
+  - {type: held}
+  - {t: ▽, type: trans}
   - numbers
   - RALT
   raise:
@@ -121,12 +121,12 @@ layers:
   - END
   - <
   - '>'
-  - '?'
-  - \
+  - '{'
+  - '}'
   - LGUI
   - numbers
-  - SPACE
-  - {t: RET, type: held}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - RALT
   adjust:
