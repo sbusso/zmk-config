@@ -1,6 +1,7 @@
-.DS_Store
-.venv
-.west
+/.west
+/modules
 /zephyr
 /zmk
-/modules
+/build
+.DS_Store
+.venv

@@ -2,12 +2,33 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: 73ca365530bc79d03dc64d89adc03b4ccbeeb14e  # main
       import: app/west.yml
+    - name: zephyr
+      remote: zmkfirmware
+      revision: c4fd619cc2f18a3946b9552c8a9d9ca538ed5570  # v3.5.0+zmk-fixes
+      import:
+        name-blocklist:
+          - ci-tools
+          - hal_altera
+          - hal_cypress
+          - hal_infineon
+          - hal_microchip
+          - hal_nxp
+          - hal_openisa
+          - hal_silabs
+          - hal_xtensa
+          - hal_st
+          - hal_ti
+          - loramac-node
+          - mcuboot
+          - mcumgr
+          - net-tools
+          - openthread
+          - edtt
+          - trusted-firmware-m
   self:
     path: config
