@@ -38,11 +38,11 @@ layers:
   - /
   - ESC
   - RALT
-  - {t: ENTER, h: LGUI}
+  - LGUI
   - {t: SPACE, h: lower}
-  - {t: SPACE, h: raise}
-  - {t: ENTER, h: adjust}
-  - numbers
+  - {t: ENTER, h: raise}
+  - {t: RIGHT SHIFT, h: adjust}
+  - {t: RIGHT ALT, h: numbers}
   lower:
   - '`'
   - '1'
